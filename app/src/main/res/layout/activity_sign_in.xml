@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SignInActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_id"
+        android:id="@+id/cl_login_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -18,50 +18,53 @@
         app:layout_constraintVertical_bias="0.2">
 
         <TextView
-            android:id="@+id/tv_id"
+            android:id="@+id/tv_login_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="아이디"
+            android:text="깃허브 아이디"
+            android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/et_id"
+            android:id="@+id/et_login_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="ID를입력해주세요"
-            app:layout_constraintStart_toStartOf="@id/tv_id"
-            app:layout_constraintTop_toBottomOf="@+id/tv_id" />
+            android:hint="ID를 입력해주세요"
+            app:layout_constraintStart_toStartOf="@id/tv_login_id"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login_id" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_pw"
+        android:id="@+id/cl_login_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cl_id">
+        app:layout_constraintTop_toBottomOf="@+id/cl_login_id">
 
         <TextView
-            android:id="@+id/tv_pw"
+            android:id="@+id/tv_login_pw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="비밀번호"
+            android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/et_pw"
+            android:id="@+id/et_login_pw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="비밀번호를입력해주세요"
-            app:layout_constraintStart_toStartOf="@id/tv_pw"
-            app:layout_constraintTop_toBottomOf="@+id/tv_pw" />
+            android:hint="비밀번호를 입력해주세요"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@id/tv_login_pw"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login_pw" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -73,17 +76,42 @@
         android:layout_marginTop="50dp"
         android:text="LOGIN"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cl_pw" />
+        app:layout_constraintTop_toBottomOf="@+id/cl_login_pw" />
 
-    <Button
-        android:id="@+id/btn_replace"
-        android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_sign_up"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
-        android:text="REPLACE"
+        android:layout_margin="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login">
+
+        <TextView
+            android:id="@+id/tv_sign_up_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="아이디/비밀번호가 없으신가요?"
+            app:layout_constraintEnd_toStartOf="@+id/tv_sign_up"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_sign_up_check"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
