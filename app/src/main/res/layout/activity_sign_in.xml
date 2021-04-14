@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".SignInActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"
+        />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_login_id"
@@ -42,10 +49,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cl_login_id">
+        app:layout_constraintTop_toBottomOf="@+id/cl_login_id"
+        app:layout_constraintBottom_toTopOf="@id/guideline_signin">
 
         <TextView
             android:id="@+id/tv_login_pw"
@@ -73,19 +80,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="LOGIN"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cl_login_pw" />
+        app:layout_constraintTop_toBottomOf="@+id/guideline_signin"
+        app:layout_constraintBottom_toTopOf="@id/cl_sign_up"
+        />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_login">
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        android:layout_marginTop="20dp">
 
         <TextView
             android:id="@+id/tv_sign_up_check"
