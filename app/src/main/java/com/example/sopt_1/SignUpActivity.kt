@@ -5,12 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.sopt_1.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,8 +37,8 @@ class SignUpActivity : AppCompatActivity() {
                 // 종료 전 putExtra를 이용해 모든 값을 intent에 넣어 전달
                 val intent = Intent(this@SignUpActivity, HomeActivity::class.java)
                 intent.putExtra("userName", userName.toString())
-                intent.putExtra("userId", userId.toString())
-                intent.putExtra("userPw", userPw.toString())
+                    .putExtra("userId", userId.toString())
+                    .putExtra("userPw", userPw.toString())
 
                 setResult(
                     RESULT_OK,
