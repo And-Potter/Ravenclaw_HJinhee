@@ -69,6 +69,12 @@ startActivityForResult() - 화면전환 + 결과값 반환
 setResult() 메소드로 결과 저장
 finish() 로 초기 화면으로 돌아가기
 onActivityResult() 메소드에서 여러 개의 startActivityForResult() 구분 가능 / 호출된 Activity에서 저장한 결과를 돌려줌
+![start 1](https://user-images.githubusercontent.com/53166299/114663747-c0e51c00-9d35-11eb-96c3-a42116302ac1.png)
+![start 2](https://user-images.githubusercontent.com/53166299/114663755-c3e00c80-9d35-11eb-9b3a-4eec441872b6.png)
+![start 3](https://user-images.githubusercontent.com/53166299/114663764-c6426680-9d35-11eb-9983-0f7af93c3de7.png)
+
+
+
 
 -> 이 기능이 사라지면서 registerForActivityResult()에서 처리 가능
 
