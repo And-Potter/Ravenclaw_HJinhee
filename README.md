@@ -65,23 +65,22 @@ private fun signUpButtonClickEvent() {
 
 ## 3. 기타
 ### 화면전환 _ startActivityForResult()
-startActivityForResult() - 화면전환 + 결과값 반환
-setResult() 메소드로 결과 저장
-finish() 로 초기 화면으로 돌아가기
-onActivityResult() 메소드에서 여러 개의 startActivityForResult() 구분 가능 / 호출된 Activity에서 저장한 결과를 돌려줌
+##### startActivityForResult() - 화면전환 + 결과값 반환
+##### setResult() 메소드로 결과 저장
+##### finish() 로 초기 화면으로 돌아가기
+##### onActivityResult() 메소드에서 여러 개의 startActivityForResult() 구분 가능 / 호출된 Activity에서 저장한 결과를 돌려줌
 ![start 1](https://user-images.githubusercontent.com/53166299/114663747-c0e51c00-9d35-11eb-96c3-a42116302ac1.png)
 ![start 2](https://user-images.githubusercontent.com/53166299/114663755-c3e00c80-9d35-11eb-9b3a-4eec441872b6.png)
 ![start 3](https://user-images.githubusercontent.com/53166299/114663764-c6426680-9d35-11eb-9983-0f7af93c3de7.png)
 
 
 
-
 -> 이 기능이 사라지면서 registerForActivityResult()에서 처리 가능
 
 ### 화면전환_ registerForActivityResult()
- registerForActivityResult() 메소드를 통해 ActivityLauncher 만들기
- -> 여기서 바로 데이터 불러오고 사용 가능
- ActivityLauncher 를 launch 할 때 intent를 인자로 전달
- -> 어떤 액티비티에서 요청을 보냈는지 확인할 필요없이, 해당 액티비티에서 보낸 요청은 무조건 registerForActivityResult()의 collback으로 떨어짐
- setResult() , finish()는 이전과 동일
+##### registerForActivityResult() 메소드를 통해 ActivityLauncher 만들기
+##### -> 여기서 바로 데이터 불러오고 사용 가능
+##### ActivityLauncher 를 launch 할 때 intent를 인자로 전달
+##### -> 어떤 액티비티에서 요청을 보냈는지 확인할 필요없이, 해당 액티비티에서 보낸 요청은 무조건 registerForActivityResult()의 collback으로 떨어짐
+##### setResult() , finish()는 이전과 동일
  
