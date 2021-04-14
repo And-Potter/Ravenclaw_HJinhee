@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="HJinhee"
+                android:text="@string/my_github_id"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_img" />
 
@@ -47,7 +47,7 @@
                 android:id="@+id/tv_home_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jinhee Han"
+                android:text="@string/my_name"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/tv_home_id"
@@ -57,10 +57,7 @@
                 android:id="@+id/tv_home_introduce"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="BE SOPT 28기 YBBE SOPT 28기 YBBE SOPT 28기 YBBE SOPT 28기
-                 YBBE SOPT 28기 YBBE SOPT 28기 YBBE SOPT 28기 YBBE SOPT 28기 YBBE SOPT 28기
-                  YBBE SOPT 28기 YBBE SOPT 28기 YBBE SOPT 28기 YBBE SOPT 28기 YBBE SOPT 28기
-                  YBBE SOPT 28기 YBBE SOPT 28기 YBBE SOPT 28기 YBBE SOPT 28기 YB"
+                android:text="@string/introduce_1"
                 app:layout_constraintStart_toStartOf="@id/tv_home_name"
                 app:layout_constraintTop_toBottomOf="@id/tv_home_name" />
 

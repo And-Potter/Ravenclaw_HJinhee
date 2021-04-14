@@ -22,7 +22,7 @@
             android:id="@+id/tv_signup_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="이름"
+            android:text="@string/user_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +30,7 @@
             android:id="@+id/et_signup_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="이름을 입력해주세요"
+            android:hint="@string/input_name"
             app:layout_constraintStart_toStartOf="@+id/tv_signup_name"
             app:layout_constraintTop_toBottomOf="@+id/tv_signup_name" />
 
@@ -50,7 +50,7 @@
             android:id="@+id/tv_signup_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="깃허브 아이디"
+            android:text="@string/github_id"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,7 +58,7 @@
             android:id="@+id/et_signup_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="ID를 입력해주세요"
+            android:hint="@string/input_id"
             app:layout_constraintStart_toStartOf="@+id/tv_signup_id"
             app:layout_constraintTop_toBottomOf="@+id/tv_signup_id" />
 
@@ -78,7 +78,7 @@
             android:id="@+id/tv_signup_pw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="비밀번호"
+            android:text="@string/password"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -86,7 +86,7 @@
             android:id="@+id/et_signup_pw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="비밀번호를 입력해주세요"
+            android:hint="@string/input_pw"
             android:inputType="textPassword"
             app:layout_constraintStart_toStartOf="@+id/tv_signup_pw"
             app:layout_constraintTop_toBottomOf="@+id/tv_signup_pw" />
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
-        android:text="SIGNUP"
+        android:text="@string/sign_up_eng"
         app:layout_constraintTop_toBottomOf="@+id/cl_signup_pw" />
 
 
