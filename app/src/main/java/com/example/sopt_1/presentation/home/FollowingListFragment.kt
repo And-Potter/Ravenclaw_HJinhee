@@ -32,30 +32,22 @@ class FollowingListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // 1. 우리가 사용할 어뎁터의 초기 값을 넣어줍시다!
+        // 1. 우리가 사용할 어뎁터의 초기 값을 넣어준다
         followingListAdapter =
             FollowingListAdapter()
 
-        // 2. RecyclerView 에 어뎁터를 우리가 만든 어뎁터로 만들어줍시다!
+        // 2. RecyclerView 에 어뎁터를 우리가 만든 어뎁터로 만들기
         binding.listUser.adapter = followingListAdapter
 
         followingListAdapter.userList.addAll(
             listOf<FollowingUserInfo>(
                 FollowingUserInfo(
-                    userImage = "지금은 빈칸! 4차때 넣어봅시다!",
-                    userName = "jinsu4755"
+                    userImage = "",
+                    userName = "jinhee"
                 ),
                 FollowingUserInfo(
-                    userImage = "지금은 빈칸! 4차때 넣어봅시다!",
-                    userName = "l2hyunwoo"
-                ),
-                FollowingUserInfo(
-                    userImage = "지금은 빈칸! 4차때 넣어봅시다!",
-                    userName = "SSong-develop"
-                ),
-                FollowingUserInfo(
-                    userImage = "지금은 빈칸! 4차때 넣어봅시다!",
-                    userName = "kym1924"
+                    userImage = "",
+                    userName = "hello"
                 )
             )
         )
