@@ -6,55 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_home_list"
+    <ScrollView
+        android:id="@+id/scroll_home"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="300dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/iv_img"
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_home_list"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background"
-            app:layout_constraintDimensionRatio="1:1"
+            android:layout_marginHorizontal="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/tv_home_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="HJinhee"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_img" />
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintDimensionRatio="1:1"
+                android:layout_marginTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tv_home_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jinhee Han"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@id/tv_home_id"
-            app:layout_constraintTop_toBottomOf="@+id/tv_home_id" />
+            <TextView
+                android:id="@+id/tv_home_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/my_github_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_img" />
 
-        <TextView
-            android:id="@+id/tv_home_introduce"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BE SOPT 28기 YB"
-            app:layout_constraintStart_toStartOf="@id/tv_home_name"
-            app:layout_constraintTop_toBottomOf="@id/tv_home_name" />
+            <TextView
+                android:id="@+id/tv_home_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_name"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tv_home_id"
+                app:layout_constraintTop_toBottomOf="@+id/tv_home_id" />
+
+            <TextView
+                android:id="@+id/tv_home_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/introduce_1"
+                app:layout_constraintStart_toStartOf="@id/tv_home_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_home_name" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,15 +1,30 @@
 package com.example.sopt_1
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.sopt_1.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignInBinding
+
+    private val signUpActivityLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+            //데이터를 받아서 할 일이 들어가는 칸
+            if (it.resultCode == Activity.RESULT_OK) {
+                if (intent != null) {
+                    binding.etLoginId.setText(it.data?.extras?.getString("userId"))
+                    binding.etLoginPw.setText(it.data?.extras?.getString("userPw"))
+                }
+            }
+
+        }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,40 +60,16 @@ class SignInActivity : AppCompatActivity() {
 
     private fun signUpClickEvent() {
         binding.tvSignUp.setOnClickListener {
-            //SignUpActivity로 이동, registerActivityForResult 이용
-            //startActivity : 새 액티비티를 열어줌
-            //startActivityForResult : 새 액티비티를 열어줌 + 결과값 전달
 
             val intent = Intent(this@SignInActivity, SignUpActivity::class.java)
-            startActivityForResult(
-                intent,
-                REQUEST_CODE
-            )     //int형 requestCode -> 여러 액티비티를 쓰는 경우, 어떤 Activity인지 식별하는 값
+            signUpActivityLauncher.launch(intent)
 
         }
     }
 
-    //onActivityResult() 메소드 : 호출된 Activity에서 저장한 결과를 돌려줌
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == REQUEST_CODE) {
-            if (resultCode == RESULT_OK) {
-                Toast.makeText(
-                    this@SignInActivity, "RESULT_OK"
-                            + "/n이름 : " + data?.getStringExtra("userName")
-                            + "/n깃허브 아이디 : " + data?.getStringExtra("userId")
-                            + "/n비밀번호 : " + data?.getStringExtra("userPw"), Toast.LENGTH_SHORT
-                ).show();
-            } else {   // RESULT_CANCEL
-                Toast.makeText(this@SignInActivity, "RESULT_CANCEL", Toast.LENGTH_SHORT).show();
-            }
-        }
-    }
 
     companion object {
         const val CURRENT_ACTIVITY = "SignInActivity"
-        const val REQUEST_CODE = 0
     }
 
     override fun onStart() {
