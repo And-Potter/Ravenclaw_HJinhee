@@ -1,3 +1,4 @@
+
 # Seminal 1주차 과제 level1, level2
 
 ### level1
@@ -29,9 +30,8 @@ private val signUpActivityLauncher =
             val intent = Intent(this@SignInActivity, SignUpActivity::class.java)
             signUpActivityLauncher.launch(intent)
 
-        }
-    }
- ```
+```
+
  
 SignUpActivity.kt
  ```
@@ -39,6 +39,7 @@ private fun signUpButtonClickEvent() {
         binding.btnSignUp.setOnClickListener {
 
             ...
+
             } else {
                 //초기 SignUpActivity로 돌아갈 수 있도록 종료
                 // 종료 전 putExtra를 이용해 모든 값을 intent에 넣어 전달
@@ -62,7 +63,6 @@ private fun signUpButtonClickEvent() {
 
 
 
-
 ## 3. 기타
 ### 화면전환 _ startActivityForResult()
 ##### startActivityForResult() - 화면전환 + 결과값 반환
@@ -83,4 +83,3 @@ private fun signUpButtonClickEvent() {
 ##### ActivityLauncher 를 launch 할 때 intent를 인자로 전달
 ##### -> 어떤 액티비티에서 요청을 보냈는지 확인할 필요없이, 해당 액티비티에서 보낸 요청은 무조건 registerForActivityResult()의 collback으로 떨어짐
 ##### setResult() , finish()는 이전과 동일
- 
