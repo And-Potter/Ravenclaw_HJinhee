@@ -1,12 +1,12 @@
-package com.example.sopt_1
+package com.example.sopt_1.presentation.signup
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
 import com.example.sopt_1.databinding.ActivitySignUpBinding
+import com.example.sopt_1.presentation.home.HomeActivity
 
 class SignUpActivity : AppCompatActivity() {
 

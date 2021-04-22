@@ -1,4 +1,4 @@
-package com.example.sopt_1
+package com.example.sopt_1.presentation.signin
 
 import android.app.Activity
 import android.content.Intent
@@ -8,6 +8,8 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.sopt_1.databinding.ActivitySignInBinding
+import com.example.sopt_1.presentation.home.HomeActivity
+import com.example.sopt_1.presentation.signup.SignUpActivity
 
 class SignInActivity : AppCompatActivity() {
 
