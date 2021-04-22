@@ -1,13 +1,25 @@
 package com.example.sopt_1.presentation.home
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.sopt_1.databinding.ActivityHomeBinding
+import com.example.sopt_1.presentation.signup.SignUpActivity
 
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
+
+    private val userInfoActivityLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+            //데이터를 받아서 할 일이 들어가는 칸
+
+        }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,8 +28,19 @@ class HomeActivity : AppCompatActivity() {
 
         Log.d(CURRENT_ACTIVITY, "Called onStart")
 
+
+        initMoreButtonClickEvent()
+
+
     }
 
+    private fun initMoreButtonClickEvent() {
+        binding.btnHomeMore.setOnClickListener{
+            val intent = Intent(this@HomeActivity, UserInfoActivity::class.java)
+            userInfoActivityLauncher.launch(intent)
+        }
+
+    }
     companion object {
         const val CURRENT_ACTIVITY = "HomeActivity"
     }
