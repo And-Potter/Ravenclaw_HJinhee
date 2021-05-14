@@ -14,8 +14,7 @@ class UserInfoActivity : AppCompatActivity() {
         binding = ActivityUserInfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val followingListFragment =
-            FollowingListFragment()
+        val followingListFragment = FollowingListFragment()
 
         val transaction = supportFragmentManager.beginTransaction()
         transaction.add(R.id.fragment_user_info, followingListFragment)
