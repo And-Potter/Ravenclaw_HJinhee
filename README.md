@@ -18,7 +18,7 @@
 <img width="1083" alt="회원가입 전 로그인postman" src="https://user-images.githubusercontent.com/53166299/118311558-078f8700-b52b-11eb-963c-84d91cac706d.png">
 
 회원가입, 로그인 서버 통신
-![회원가입_-로그인-서버-통신](https://user-images.githubusercontent.com/53166299/118312182-f2672800-b52b-11eb-8ec8-fbe11fdbfe14.gif)
+https://user-images.githubusercontent.com/53166299/118313374-9dc4ac80-b52d-11eb-9823-c31071e15012.mp4
 
 
 회원가입 후 로그인 PostMan
