@@ -23,8 +23,8 @@
 
 
 
-​			👇회원가입 후 로그인 PostMan
-<img width="400" alt="회원가입 후 로그인 postman" src="https://user-images.githubusercontent.com/53166299/118391629-42e79e00-b670-11eb-9334-e748f9a3ea2f.png"  style="float:right">
+			👇회원가입 후 로그인 PostMan
+<img width="400" alt="회원가입 후 로그인 postman" src="https://user-images.githubusercontent.com/53166299/118391629-42e79e00-b670-11eb-9334-e748f9a3ea2f.png" style="float:right">
 
 
 
@@ -248,7 +248,7 @@
 
 - retrofit2 을 이용한 서버 통신 방법
 
-  1. 서버 Request, Response 객체 설계   (data class)
+  1. 서버 Request, Response 객체 설계 (data class)
   2. Retrofit Interface 구현체 만들기 (ApiService, ServiceCreator)
   3. callback을 등록하며 통신 요청하기 (Activity, Fragment)
 
