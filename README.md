@@ -19,12 +19,12 @@
 <img width=300 alt="회원가입, 로그인 서버 통신" src="https://user-images.githubusercontent.com/53166299/118315372-686d8e00-b530-11eb-86f6-7f2440a8a190.gif"  style="float:left">
 
 👇회원가입 전 로그인 PostMan
-<img width="400" alt="회원가입 전 로그인postman" src="/Users/hanjinhee/Desktop/BE SOPT/회원가입 전 로그인postman.png" style="float:left">
+<img width="400" alt="회원가입 전 로그인postman" src="https://user-images.githubusercontent.com/53166299/118391617-2c414700-b670-11eb-8bf0-5cb34f3fbc18.png" style="float:left">
 
 
 
 ​			👇회원가입 후 로그인 PostMan
-<img width="400" alt="회원가입 후 로그인 postman" src="/Users/hanjinhee/Desktop/BE SOPT/회원가입 후 로그인 postman.png"  style="float:right">
+<img width="400" alt="회원가입 후 로그인 postman" src="https://user-images.githubusercontent.com/53166299/118391629-42e79e00-b670-11eb-9334-e748f9a3ea2f.png"  style="float:right">
 
 
 
@@ -43,7 +43,7 @@
 
 
 👇회원가입 후 회원가입 PostMan
-<img width="400" alt="회원가입 후 회원가입 postman" src="/Users/hanjinhee/Desktop/BE SOPT/회원가입 후 회원가입 postman.png">
+<img width="400" alt="회원가입 후 회원가입 postman" src="https://user-images.githubusercontent.com/53166299/118391646-53981400-b670-11eb-804c-bb6df98ca044.png">
 
 
 
