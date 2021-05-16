@@ -67,7 +67,7 @@ class SignUpActivity : AppCompatActivity() {
             birth = "1999-00-00"
         )
 
-        val call: Call<ResponseSignUpData> = ServiceCreator.soptService.postSignUp((requestSignUpData))
+        val call: Call<ResponseSignUpData> = ServiceCreator.loginService.postSignUp((requestSignUpData))
 
         call.enqueue(object: Callback<ResponseSignUpData> {
             override fun onResponse(

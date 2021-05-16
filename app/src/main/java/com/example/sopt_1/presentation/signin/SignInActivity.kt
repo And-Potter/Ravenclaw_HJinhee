@@ -74,7 +74,7 @@ class SignInActivity : AppCompatActivity() {
            password = binding.etLoginPw.text.toString()
         )
 
-        val call: Call<ResponseLoginData> = ServiceCreator.soptService.postLogin((requestLoginData))
+        val call: Call<ResponseLoginData> = ServiceCreator.loginService.postLogin((requestLoginData))
 
         call.enqueue(object: Callback<ResponseLoginData> {
             override fun onResponse(

@@ -2,7 +2,7 @@ package com.example.sopt_1.data.request
 
 import com.google.gson.annotations.SerializedName
 
-class RequestSignUpData (
+data class RequestSignUpData (
     @SerializedName("email")
     val id: String,
     val password: String,
