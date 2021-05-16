@@ -15,7 +15,8 @@
 ### 📷 사진, 영상
 
 👇회원가입, 로그인 서버 통신
-<img width=300 alt="회원가입, 로그인 서버 통신" src="https://user-images.githubusercontent.com/53166299/118315372-686d8e00-b530-11eb-86f6-7f2440a8a190.gif" >
+
+<img width=300 alt="회원가입, 로그인 서버 통신" src="https://user-images.githubusercontent.com/53166299/118315372-686d8e00-b530-11eb-86f6-7f2440a8a190.gif" style="float:left">
 
 👉회원가입 전 로그인 PostMan
 <img width="400" alt="회원가입 전 로그인postman" src="https://user-images.githubusercontent.com/53166299/118391617-2c414700-b670-11eb-8bf0-5cb34f3fbc18.png" >
