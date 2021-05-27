@@ -32,13 +32,19 @@ class FollowingListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setFollowingAdapter()
+        setFollowingListData()
+    }
+
+    private fun setFollowingAdapter(){
         // 1. 우리가 사용할 어뎁터의 초기 값을 넣어준다
-        followingListAdapter =
-            FollowingListAdapter()
+        followingListAdapter = FollowingListAdapter()
 
         // 2. RecyclerView 에 어뎁터를 우리가 만든 어뎁터로 만들기
         binding.listUser.adapter = followingListAdapter
+    }
 
+    private fun setFollowingListData(){
         followingListAdapter.userList.addAll(
             listOf<FollowingUserInfo>(
                 FollowingUserInfo(

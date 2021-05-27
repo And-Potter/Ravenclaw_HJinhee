@@ -18,9 +18,7 @@ class RepositoryListAdapter : RecyclerView.Adapter<RepositoryListAdapter.Reposit
             parent,
             false
         )
-        return RepositoryViewHolder(
-            binding
-        )
+        return RepositoryViewHolder(binding)
     }
 
     // 4. Adapter 는 전체 아이템의 수를 알아야 함
@@ -35,9 +33,7 @@ class RepositoryListAdapter : RecyclerView.Adapter<RepositoryListAdapter.Reposit
         private val binding: ItemRepositoryBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun onBind(repositoryInfo: RepositoryInfo) {
-            binding.tvRepositoryName.text = repositoryInfo.repoName
-            binding.tvRepositoryInfo.text = repositoryInfo.repoInfo
-            binding.tvLanguage.text = repositoryInfo.repoLanguage
+            binding.repoData = repositoryInfo
         }
     }
 }

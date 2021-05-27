@@ -20,9 +20,7 @@ class FollowingListAdapter : RecyclerView.Adapter<FollowingListAdapter.Following
             parent,
             false
         )
-        return FollowingUserViewHolder(
-            binding
-        )
+        return FollowingUserViewHolder(binding)
     }
 
     // 4. Adapter 는 전체 아이템의 수를 알아야 함
@@ -37,7 +35,7 @@ class FollowingListAdapter : RecyclerView.Adapter<FollowingListAdapter.Following
         private val binding: ItemFollowingUserBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun onBind(followingUserInfo: FollowingUserInfo) {
-            binding.tvFollowingUserName.text = followingUserInfo.userName
+            binding.followData = followingUserInfo
         }
     }
 }
